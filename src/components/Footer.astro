@@ -1,0 +1,23 @@
+---
+const currentYear = new Date().getFullYear();
+const socialLinks = [
+  { label: 'GitHub', href: 'https://github.com/chalkyjason' },
+  { label: 'Twitter/X', href: '#' },
+  { label: 'LinkedIn', href: '#' },
+];
+---
+
+<footer class="border-t border-border-subtle mt-auto px-6 py-8">
+  <div class="max-w-5xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-4">
+    <p class="text-text-muted font-mono text-xs">
+      &copy; {currentYear} Jason Chalky. All systems operational.
+    </p>
+    <div class="flex gap-4">
+      {socialLinks.map(link => (
+        <a href={link.href} class="text-text-muted font-mono text-xs hover:text-accent transition-colors" target="_blank" rel="noopener noreferrer">
+          {link.label}
+        </a>
+      ))}
+    </div>
+  </div>
+</footer>

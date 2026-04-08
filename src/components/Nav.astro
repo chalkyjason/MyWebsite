@@ -1,0 +1,20 @@
+---
+const navLinks = [
+  { label: 'PROJECTS', href: `${import.meta.env.BASE_URL}projects` },
+  { label: 'BLOG', href: `${import.meta.env.BASE_URL}blog` },
+  { label: 'ABOUT', href: `${import.meta.env.BASE_URL}about` },
+];
+---
+
+<nav class="flex justify-between items-center px-6 py-4 border-b border-border">
+  <a href={import.meta.env.BASE_URL} class="text-accent font-mono font-bold text-sm hover:brightness-125 transition-all">
+    &gt; JASON_CHALKY
+  </a>
+  <div class="flex gap-6">
+    {navLinks.map(link => (
+      <a href={link.href} class="text-text-muted font-mono text-xs hover:text-accent transition-colors">
+        {link.label}
+      </a>
+    ))}
+  </div>
+</nav>
