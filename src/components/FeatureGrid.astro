@@ -1,0 +1,22 @@
+---
+interface Props {
+  features: { title: string; description: string }[];
+  sectionLabel?: string;
+}
+
+const { features, sectionLabel = 'PROJECT FEATURES' } = Astro.props;
+---
+
+{features.length > 0 && (
+  <section class="mb-8">
+    <h2 class="text-accent font-mono text-xs tracking-[2px] mb-4">{sectionLabel}</h2>
+    <div class="grid gap-3 sm:grid-cols-2">
+      {features.map(feature => (
+        <div class="bg-bg-card border border-border rounded-lg p-4">
+          <h3 class="text-text-primary text-sm font-bold mb-1">{feature.title}</h3>
+          <p class="text-text-secondary text-xs">{feature.description}</p>
+        </div>
+      ))}
+    </div>
+  </section>
+)}

@@ -1,0 +1,27 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import ProjectCard from '../../components/ProjectCard.astro';
+import { getCollection } from 'astro:content';
+
+const projects = (await getCollection('projects')).sort((a, b) => b.data.date.getTime() - a.data.date.getTime());
+---
+
+<BaseLayout title="Projects" description="Games, apps, and tools built by Jason Chalky">
+  <p class="text-accent font-mono text-xs tracking-[2px] mb-6">ALL PROJECTS</p>
+  {projects.length > 0 ? (
+    <div class="grid gap-4 sm:grid-cols-2">
+      {projects.map(project => (
+        <ProjectCard
+          title={project.data.title}
+          slug={project.data.slug}
+          tagline={project.data.tagline}
+          status={project.data.status}
+          techStack={project.data.techStack}
+          icon={project.data.icon}
+        />
+      ))}
+    </div>
+  ) : (
+    <p class="text-text-muted font-mono text-sm">No projects deployed yet. Stand by.</p>
+  )}
+</BaseLayout>

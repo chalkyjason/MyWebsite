@@ -1,0 +1,24 @@
+---
+interface Props {
+  screenshots: string[];
+  projectSlug: string;
+  projectTitle: string;
+}
+
+const { screenshots, projectSlug, projectTitle } = Astro.props;
+---
+
+{screenshots.length > 0 && (
+  <section class="mb-8">
+    <h2 class="text-accent font-mono text-xs tracking-[2px] mb-4">SCREENSHOTS</h2>
+    <div class="flex gap-4 overflow-x-auto pb-4 -mx-2 px-2">
+      {screenshots.map((src, i) => (
+        <img
+          src={`${import.meta.env.BASE_URL}projects/${projectSlug}/${src}`}
+          alt={`${projectTitle} screenshot ${i + 1}`}
+          class="h-64 w-auto rounded-lg border border-border flex-shrink-0"
+        />
+      ))}
+    </div>
+  </section>
+)}
