@@ -1,0 +1,48 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import ContactForm from '../components/ContactForm.astro';
+
+const socialLinks = [
+  { label: 'GitHub', href: 'https://github.com/chalkyjason', icon: 'GH' },
+  { label: 'Twitter/X', href: '#', icon: 'X' },
+  { label: 'LinkedIn', href: '#', icon: 'LI' },
+];
+---
+
+<BaseLayout title="About" description="About Jason Chalky — game developer and iOS engineer">
+  <p class="text-accent font-mono text-xs tracking-[2px] mb-8">ABOUT</p>
+
+  <div class="grid gap-12 lg:grid-cols-2">
+    <!-- Bio -->
+    <div>
+      <h1 class="text-2xl font-bold mb-4">Jason Chalky</h1>
+      <div class="text-text-secondary text-sm leading-relaxed space-y-4">
+        <p>Game developer and iOS engineer building interactive experiences. Currently focused on mobile games with SpriteKit and Swift.</p>
+        <p>This site showcases my projects, hosts required legal documents for my apps, and serves as a home for devlogs and tutorials.</p>
+      </div>
+
+      <!-- Social Links -->
+      <div class="mt-8">
+        <h2 class="text-accent font-mono text-xs tracking-[2px] mb-4">CONNECT</h2>
+        <div class="flex gap-4">
+          {socialLinks.map(link => (
+            <a
+              href={link.href}
+              target="_blank"
+              rel="noopener noreferrer"
+              class="bg-bg-card border border-border rounded-lg px-4 py-2 text-text-muted font-mono text-xs hover:text-accent hover:border-accent/30 transition-all"
+            >
+              {link.label}
+            </a>
+          ))}
+        </div>
+      </div>
+    </div>
+
+    <!-- Contact Form -->
+    <div>
+      <h2 class="text-accent font-mono text-xs tracking-[2px] mb-4">SEND TRANSMISSION</h2>
+      <ContactForm />
+    </div>
+  </div>
+</BaseLayout>
