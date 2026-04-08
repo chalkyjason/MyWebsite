@@ -1,0 +1,23 @@
+---
+import LegalLayout from '../../../layouts/LegalLayout.astro';
+import { getCollection, render } from 'astro:content';
+
+export async function getStaticPaths() {
+  const legalDocs = await getCollection('legal', ({ data }) => data.type === 'privacy-policy');
+  const projects = await getCollection('projects');
+  return legalDocs.map(doc => {
+    const project = projects.find(p => p.data.slug === doc.data.project);
+    return {
+      params: { slug: doc.data.project },
+      props: { doc, projectTitle: project?.data.title ?? doc.data.project },
+    };
+  });
+}
+
+const { doc, projectTitle } = Astro.props;
+const { Content } = await render(doc);
+---
+
+<LegalLayout title={doc.data.title} projectTitle={projectTitle} projectSlug={doc.data.project} lastUpdated={doc.data.lastUpdated}>
+  <Content />
+</LegalLayout>
