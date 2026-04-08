@@ -1,0 +1,38 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import BlogPostCard from '../../components/BlogPostCard.astro';
+import { getCollection } from 'astro:content';
+
+const posts = (await getCollection('blog')).sort((a, b) => b.data.date.getTime() - a.data.date.getTime());
+
+const allTags = [...new Set(posts.flatMap(p => p.data.tags))].sort();
+---
+
+<BaseLayout title="Blog" description="Devlogs, tutorials, and announcements from Jason Chalky">
+  <p class="text-accent font-mono text-xs tracking-[2px] mb-6">ALL TRANSMISSIONS</p>
+
+  {allTags.length > 0 && (
+    <div class="flex gap-2 flex-wrap mb-6">
+      {allTags.map(tag => (
+        <span class="bg-accent-dim text-accent px-2 py-0.5 rounded text-[10px] font-mono">
+          {tag}
+        </span>
+      ))}
+    </div>
+  )}
+
+  {posts.length > 0 ? (
+    <div>
+      {posts.map(post => (
+        <BlogPostCard
+          title={post.data.title}
+          slug={post.id}
+          date={post.data.date}
+          description={post.data.description}
+        />
+      ))}
+    </div>
+  ) : (
+    <p class="text-text-muted font-mono text-sm">No transmissions yet. Stand by.</p>
+  )}
+</BaseLayout>
