@@ -1,0 +1,19 @@
+---
+interface Props {
+  status: 'live' | 'testflight' | 'coming-soon';
+}
+
+const { status } = Astro.props;
+
+const config = {
+  live: { label: 'LIVE', class: 'bg-accent/20 text-accent' },
+  testflight: { label: 'TESTFLIGHT', class: 'bg-warning/20 text-warning' },
+  'coming-soon': { label: 'COMING SOON', class: 'bg-text-muted/20 text-text-muted' },
+};
+
+const badge = config[status];
+---
+
+<span class:list={['px-2 py-0.5 rounded text-[10px] font-mono tracking-wider', badge.class]}>
+  {badge.label}
+</span>

@@ -1,7 +1,57 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import ProjectCard from '../components/ProjectCard.astro';
+import BlogPostCard from '../components/BlogPostCard.astro';
+import { getCollection } from 'astro:content';
+
+const projects = (await getCollection('projects')).sort((a, b) => b.data.date.getTime() - a.data.date.getTime());
+const posts = (await getCollection('blog')).sort((a, b) => b.data.date.getTime() - a.data.date.getTime()).slice(0, 5);
 ---
 
 <BaseLayout title="Home">
-  <p class="text-accent font-mono">&gt; SYSTEM ONLINE</p>
+  <!-- Hero -->
+  <section class="py-12 text-center">
+    <p class="text-accent font-mono text-xs tracking-[4px] mb-4">SYSTEM ONLINE</p>
+    <h1 class="text-3xl font-bold text-text-primary mb-2">Building games & apps</h1>
+    <p class="text-text-secondary text-sm">iOS Developer / Game Designer / Creator</p>
+  </section>
+
+  <!-- Featured Projects -->
+  {projects.length > 0 && (
+    <section class="mb-12">
+      <h2 class="text-accent font-mono text-xs tracking-[2px] mb-4">FEATURED PROJECTS</h2>
+      <div class="grid gap-4 sm:grid-cols-2">
+        {projects.map(project => (
+          <ProjectCard
+            title={project.data.title}
+            slug={project.data.slug}
+            tagline={project.data.tagline}
+            status={project.data.status}
+            techStack={project.data.techStack}
+            icon={project.data.icon}
+          />
+        ))}
+      </div>
+    </section>
+  )}
+
+  <!-- Latest Blog Posts -->
+  {posts.length > 0 && (
+    <section>
+      <div class="flex justify-between items-center mb-4">
+        <h2 class="text-accent font-mono text-xs tracking-[2px]">LATEST TRANSMISSIONS</h2>
+        <a href={`${import.meta.env.BASE_URL}blog`} class="text-accent text-xs font-mono hover:brightness-125">View all &rarr;</a>
+      </div>
+      <div>
+        {posts.map(post => (
+          <BlogPostCard
+            title={post.data.title}
+            slug={post.id}
+            date={post.data.date}
+            description={post.data.description}
+          />
+        ))}
+      </div>
+    </section>
+  )}
 </BaseLayout>
