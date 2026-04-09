@@ -5,7 +5,7 @@ import { remarkReadingTime } from './src/plugins/reading-time.mjs';
 
 export default defineConfig({
   site: 'https://chalkyjason.github.io',
-  base: '/MyWebsite',
+  base: '/MyWebsite/',
   integrations: [mdx()],
   markdown: {
     remarkPlugins: [remarkReadingTime],
