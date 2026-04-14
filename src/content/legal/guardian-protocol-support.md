@@ -2,7 +2,7 @@
 title: "Support"
 project: "guardian-protocol"
 type: "support"
-lastUpdated: 2026-04-07
+lastUpdated: 2026-04-14
 ---
 
 ## Contact
@@ -21,6 +21,18 @@ Make sure you are running iOS 18.0 or later. Try deleting and reinstalling the A
 ### My progress was lost
 
 Game progress is stored locally on your device. If you deleted and reinstalled the App, progress cannot be recovered. A future update may include iCloud sync.
+
+### How do I restore my in-app purchases?
+
+In-app purchases are tied to your Apple ID and can be restored automatically. Redownload the app and your purchases should be available. If not, contact support.
+
+### How do I disable ads?
+
+Ads help support continued development. You can opt out of personalized ads through Settings > Privacy & Security > Tracking on your device. A future update may offer an ad-free purchase option.
+
+### How do I unlock new defense systems?
+
+Defense systems unlock as you progress through the campaign and earn Commander XP. Complete missions and earn stars to level up your Commander rank.
 
 ### How do I report a bug?
 

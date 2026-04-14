@@ -2,7 +2,7 @@
 title: "Privacy Policy"
 project: "guardian-protocol"
 type: "privacy-policy"
-lastUpdated: 2026-04-07
+lastUpdated: 2026-04-14
 ---
 
 ## Overview

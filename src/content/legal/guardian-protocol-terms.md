@@ -2,7 +2,7 @@
 title: "Terms of Service"
 project: "guardian-protocol"
 type: "terms"
-lastUpdated: 2026-04-07
+lastUpdated: 2026-04-14
 ---
 
 ## Acceptance of Terms
