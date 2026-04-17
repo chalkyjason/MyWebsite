@@ -2,7 +2,7 @@
 title: "Privacy Policy"
 project: "chromaplex"
 type: "privacy-policy"
-lastUpdated: 2026-04-08
+lastUpdated: 2026-04-16
 ---
 
 ## Overview

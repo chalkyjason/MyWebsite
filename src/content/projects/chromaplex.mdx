@@ -1,43 +1,48 @@
 ---
 title: "Chromaplex"
 slug: "chromaplex"
-tagline: "Classic code-breaking puzzles with a modern twist"
-status: "testflight"
+tagline: "Four handcrafted puzzle games in one elegant iOS collection"
+status: "coming-soon"
 platform: "iOS"
-techStack: ["SwiftUI", "Swift", "GameKit"]
-testFlightUrl: "https://testflight.apple.com/join/REPLACE_ME"
-screenshots: []
+techStack: ["SwiftUI", "Swift", "GameKit", "WidgetKit", "UserNotifications", "StoreKit", "GoogleMobileAds"]
+appStoreUrl: ""
+testFlightUrl: ""
+screenshots:
+  - "01_home.png"
+  - "02_game_modes.png"
+  - "03_codebreaker_levels.png"
+  - "04_codebreaker_gameplay.png"
+  - "05_ballsort_gameplay.png"
+  - "06_binarygrid_gameplay.png"
+  - "07_flowconnect_gameplay.png"
 icon: "icon.png"
 features:
-  - title: "330+ Levels"
-    description: "6 difficulty tiers from Tutorial to Master — varying code lengths, color counts, and attempt limits"
-  - title: "Multiple Game Modes"
-    description: "Classic Mastermind, Ball Sort, Binary Grid, and Flow Connect puzzles"
-  - title: "Daily Challenges"
-    description: "New puzzle every day with streak tracking and leaderboard competition"
-  - title: "Game Center"
-    description: "Leaderboards for total stars, longest streak, and levels completed"
-  - title: "Widget Support"
-    description: "Home screen widgets to track your progress and daily challenge status"
-  - title: "Haptic Feedback"
-    description: "Tactile response system for an immersive puzzle-solving experience"
+  - title: "930 Handcrafted Levels"
+    description: "Four distinct puzzle games — Code Breaker (330), Ball Sort (200), Binary Grid (200), and Flow Connect (200) — each with escalating difficulty tiers"
+  - title: "Code Breaker with Knuth Hints"
+    description: "Classic Mastermind reimagined across six tiers from Tutorial to Master, with a minimax-powered hint system that teaches optimal deduction"
+  - title: "Daily Challenge and Time Attack"
+    description: "A seeded puzzle every day for the entire global player base, plus a 90-second time attack mode for competitive play"
+  - title: "Streaks, Lives, and Game Center"
+    description: "Streak tracking with milestone haptics, a regenerating lives system, and full Game Center leaderboards and achievements across all four games"
+  - title: "Home Screen Widget"
+    description: "Small, medium, and lock-screen widgets surface your current streak, total stars, and daily challenge status"
+  - title: "Privacy-First Design"
+    description: "All progress stored on-device in UserDefaults. No accounts, no analytics. Rewarded ads are opt-in and follow Apple's App Tracking Transparency"
 relatedBlog: "chromaplex"
-date: 2026-04-08
+date: 2026-04-16
 ---
 
-Chromaplex is a modern take on the classic Mastermind code-breaking game. Guess the secret color code using logical deduction — each guess gives you feedback via black and white pegs to narrow down the solution.
+Chromaplex is a collection of four distinct puzzle games in one beautifully consistent iOS app. Code Breaker gives you the deep, deductive satisfaction of classic Mastermind. Ball Sort, Binary Grid, and Flow Connect round it out with tactile, spatial puzzles that use a completely different part of your brain. One app, four genres, 930 handcrafted levels.
+
+### Why This App
+
+Most puzzle apps are either a single game stretched thin across hundreds of variants, or a grab bag of re-skinned clones with no unifying vision. Chromaplex takes the opposite approach: four genuinely different puzzle types, each designed as a first-class experience, linked by a shared progression system, a single daily challenge, and a consistent visual language.
 
 ### How It Works
 
-Each level presents a hidden color code. You place colored pegs in a row and submit your guess. Black pegs mean right color, right position. White pegs mean right color, wrong position. Use logic to crack the code within the allowed attempts.
+Code Breaker asks you to crack a secret color code using feedback pegs and logic. Ball Sort asks you to sort colored balls into tubes without spilling. Binary Grid enforces Takuzu rules across grids up to 12x12. Flow Connect asks you to draw paths between matching endpoints that fill the entire grid. Each game tracks stars, completion, and streaks independently, but all roll up into a single progression on the home screen.
 
-### Difficulty Tiers
+### Privacy-First by Design
 
-Progress through six difficulty levels, each increasing the challenge:
-
-- **Tutorial** — 3 colors, 4 options, 10 attempts
-- **Beginner** through **Master** — up to 5 colors, 8 options, and only 6 attempts
-
-### Beyond Mastermind
-
-Chromaplex includes additional puzzle modes — Ball Sort, Binary Grid, and Flow Connect — giving you variety when you want a break from code-breaking.
+Chromaplex stores all game data on-device. Progress, streaks, hints, daily challenge results, and lives never leave your phone. Optional Game Center leaderboards use anonymous identifiers managed by Apple. Rewarded ads are shown through Google AdMob only when you explicitly opt in to earn an extra life or hint, and they follow Apple's App Tracking Transparency framework.

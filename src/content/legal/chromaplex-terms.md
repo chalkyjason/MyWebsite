@@ -2,7 +2,7 @@
 title: "Terms of Service"
 project: "chromaplex"
 type: "terms"
-lastUpdated: 2026-04-08
+lastUpdated: 2026-04-16
 ---
 
 ## Acceptance of Terms
