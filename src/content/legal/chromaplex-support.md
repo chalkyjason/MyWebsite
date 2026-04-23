@@ -2,7 +2,7 @@
 title: "Support"
 project: "chromaplex"
 type: "support"
-lastUpdated: 2026-04-16
+lastUpdated: 2026-04-23
 ---
 
 ## Contact
@@ -24,7 +24,7 @@ All game data is stored locally on your device. If you deleted and reinstalled t
 
 ### How do daily challenges work?
 
-A new Code Breaker puzzle is generated every day using the same seed for every player worldwide. Complete it to maintain your streak. Streaks are tracked on the Game Center leaderboard and power-up your home screen widget.
+A new Code Breaker puzzle is generated every day using the same seed for every player worldwide. Complete it to maintain your streak. Streaks are tracked on the Game Center leaderboard.
 
 ### What are the four game modes?
 
