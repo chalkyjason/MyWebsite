@@ -1,13 +1,13 @@
 ---
 title: "Terms of Service"
-project: "army-jay"
+project: "callsign-fpv"
 type: "terms"
 lastUpdated: 2026-10-01
 ---
 
 ## Acceptance of Terms
 
-By downloading, installing, or using Army Jay ("the App"), you agree to these Terms of Service. If you do not agree, do not install or use the App.
+By downloading, installing, or using Callsign FPV ("the App"), you agree to these Terms of Service. If you do not agree, do not install or use the App.
 
 ## License
 
@@ -39,7 +39,7 @@ To the fullest extent permitted by law, Jason Chalky shall not be liable for any
 
 ## Non-Affiliation
 
-Army Jay is **not affiliated with, endorsed by, or sponsored by** the EdgeTX or Betaflight projects. Product names are used only to describe compatibility.
+Callsign FPV is **not affiliated with, endorsed by, or sponsored by** the EdgeTX or Betaflight projects. Product names are used only to describe compatibility.
 
 ## Changes to These Terms
 

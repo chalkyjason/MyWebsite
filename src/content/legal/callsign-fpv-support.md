@@ -1,13 +1,13 @@
 ---
 title: "Support"
-project: "army-jay"
+project: "callsign-fpv"
 type: "support"
 lastUpdated: 2026-10-01
 ---
 
 ## Contact
 
-For bug reports, feature requests, or general questions about Army Jay, please reach out:
+For bug reports, feature requests, or general questions about Callsign FPV, please reach out:
 
 - **Email:** support@jasonchalky.com
 - **Developer:** Jason Chalky
@@ -19,7 +19,7 @@ Please include your iOS version and iPhone model when reporting bugs, and for a 
 
 ### Which audio files can I convert?
 
-MP3, M4A (AAC), WAV and FLAC. Army Jay uses your iPhone's own audio decoder, so a file iOS can't play won't convert; you'll see a message saying so.
+MP3, M4A (AAC), WAV and FLAC. Callsign FPV uses your iPhone's own audio decoder, so a file iOS can't play won't convert; you'll see a message saying so.
 
 ### Where do I put the converted sound on my radio?
 
@@ -39,11 +39,11 @@ Everything is stored on your device only. Deleting and reinstalling the App, or 
 
 ### Does the app work offline?
 
-Yes. Army Jay never needs an internet connection.
+Yes. Callsign FPV never needs an internet connection.
 
 ## Data Deletion
 
-All Army Jay data is stored **locally on your device**. There is no account and nothing to delete remotely.
+All Callsign FPV data is stored **locally on your device**. There is no account and nothing to delete remotely.
 
 **To delete your data:**
 
@@ -54,4 +54,4 @@ All Army Jay data is stored **locally on your device**. There is no account and 
 
 ## Disclaimer
 
-Army Jay is not affiliated with or endorsed by the EdgeTX or Betaflight projects. Check your sounds and OSD on the bench before you fly, and fly safely and within the law.
+Callsign FPV is not affiliated with or endorsed by the EdgeTX or Betaflight projects. Check your sounds and OSD on the bench before you fly, and fly safely and within the law.

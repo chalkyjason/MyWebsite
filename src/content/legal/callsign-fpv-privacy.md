@@ -1,13 +1,13 @@
 ---
 title: "Privacy Policy"
-project: "army-jay"
+project: "callsign-fpv"
 type: "privacy-policy"
 lastUpdated: 2026-10-01
 ---
 
 ## Overview
 
-Army Jay ("the App") is a toolkit for FPV pilots that converts audio for EdgeTX radios and edits Betaflight OSD fonts, developed by Jason Chalky. **We do not collect any personal information, we do not require an account, and nothing you make in the App is sent off your device.**
+Callsign FPV ("the App") is a toolkit for FPV pilots that converts audio for EdgeTX radios, edits Betaflight OSD fonts and designs Betaflight start screens, developed by Jason Chalky. **We do not collect any personal information, we do not require an account, and nothing you make in the App is sent off your device.**
 
 ## What We Collect
 
@@ -46,7 +46,7 @@ The **Source** link at the bottom of the App opens the project's GitHub page in 
 
 ## Children's Privacy
 
-Army Jay is not directed to children under 13 and does not knowingly collect information from anyone, including children under 13.
+Callsign FPV is not directed to children under 13 and does not knowingly collect information from anyone, including children under 13.
 
 ## Data Security
 
